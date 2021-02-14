@@ -12,10 +12,10 @@ const App = () =>{
      <ScrollView horizontal="true">
        {/* <RepositoryList /> */}
        <Switch>
-        <Route path="/" exact>
+        <Route path="/">
           <RepositoryList />
         </Route>
-        <Route path="/Connexion" >
+        <Route path="/Connexion" component = {signInConnexion} >
           <signInConnexion />
         </Route>
         <Redirect to="/" />
